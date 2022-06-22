@@ -5,7 +5,7 @@ on:
     branches:
       - master
   schedule:
-    - cron: "0 3 * * 1,3,5" # Runs at 03:00 AM (UTC) every Monday, Wednesday, and Friday (Check https://crontab.guru/)
+    - cron: "31,1 8-23 * * 0-6" # Runs at minute 31 and 01 past every hour from 8 through 23 on every day-of-week from Sunday through Saturday (Check https://crontab.guru/)
 
 jobs:
   zotero-to-readwise-automation:
